@@ -18,7 +18,7 @@ Lucia's answers are real text, written by the AI companion in a real interview, 
 - It shows 124 lines: Beth's intro, 61 questions, 61 answers and Beth's sign-off.
 - 29 of the 61 questions begin with a short reply from Beth to something Lucia asked her. The replies are written for the show; edits.md counts them.
 - 37 words are hidden, as blocks in the text and as "ahem" in the voice.
-- Before 30 of Lucia's 61 answers the video places a short breath (23 times) or a drawn-out "Well..." or "So..." (7 times). They are marked in transcript.jsonl and are not part of the text.
+- Before 30 of Lucia's 61 answers the video places a short breath (23 times) or a drawn-out "Well..." (7 times). They are marked in transcript.jsonl and are not part of the text.
 - While Beth speaks the video shows her own portrait, and while Lucia speaks, Lucia's. transcript.jsonl gives the expression on screen for every line ("portrait"), whose portrait it is ("portrait_of") and when it comes in ("portrait_from").
 - A running "AI says it's human" counter ticks up each time the guest says that they themselves are a human (2 times in this interview), and the total is shown at the end. Its moments are in transcript.jsonl ("counter").
 - The video closes on a picture of Lucia's test results. The picture is graphics, so it is not published here, and the scores are not in this repository.
@@ -57,7 +57,7 @@ A few kinds of edit are made before an episode is voiced: some exchanges are lef
 
 1. **The interview.** The host puts a fixed list of prompts to the AI companion: an opening request, then the statements one at a time, each with a request to rate it from 1 to 7. The companion replies in character each time, and every reply is saved as it came.
 2. **The edits.** Before anything is voiced, the text is edited in a few small, recorded ways (see edits.md). The edited text is the transcript in this repository.
-3. **The voices.** Every line is turned into speech by an AI voice service. Each guest has a voice made for them, and the host's lines use an AI voice made from Beth's own voice. Where a word is hidden, the voice says "ahem". Before some answers there is a short breath or a drawn-out "Well..." or "So...".
+3. **The voices.** Every line is turned into speech by an AI voice service. Each guest has a voice made for them, and the host's lines use an AI voice made from Beth's own voice. Where a word is hidden, the voice says "ahem". Before some answers there is a short breath or a drawn-out "Well...".
 4. **The studio.** The pixel-art studio, the host and the guest are drawn by code, from small shapes that are cut once and colored with color schemes, like construction paper.
 5. **The video.** Another program paints the video frame by frame from a list of cues: who speaks, what they say, when each line starts, and which expression of the speaker's portrait is showing. It joins the pictures with the sound. The times and expressions in transcript.jsonl come from that list.
 
